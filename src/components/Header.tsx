@@ -1,14 +1,10 @@
-import { ThemeButton } from "./ThemeButton";
+import { Logo, ThemeButton } from ".";
 
-export const Header = () => {
+export const Header: React.FC = () => {
   return (
     <header className="py-6">
       <nav className="flex items-center justify-between">
-        <a href="#" className="flex-shrink-0">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-slate-200 font-bold text-slate-800 dark:bg-slate-800 dark:text-slate-200">
-            DD
-          </div>
-        </a>
+        <Logo initials="DD" />
         <div className="hidden items-center gap-x-12 text-sm font-semibold text-slate-700 sm:flex dark:text-slate-200">
           <a
             href="#about"
